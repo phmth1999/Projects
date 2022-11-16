@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #mainqc{
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            width: 444px;
+        }
+        #tatqc, #moqc{
+            width: 100%;
+            padding: 10px 0px;
+            background: teal;
+            text-align: right;
+        }
+        #moqc{
+            display: none;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="mainqc">
+        <div id="tatqc">
+            <a onclick="hide()" href="#">Tat quang cao X</a>
+        </div>
+        <div id="picqc">
+            <a href="#" target="_blank">
+                <img src="xam.jpg" width="444" height="274" alt="">
+            </a>
+        </div>
+        <div id="moqc">
+            <a onclick="show()" href="#">Mo quang cao</a>
+        </div>
+    </div>
+
+    <script>
+        // function hide(){
+        //     document.getElementById("tatqc").style.display = "none";
+        //     document.getElementById("picqc").style.display = "none";
+        //     document.getElementById("moqc").style.display = "block";
+        // }
+        // function show(){
+        //     document.getElementById("tatqc").style.display = "block";
+        //     document.getElementById("picqc").style.display = "block";
+        //     document.getElementById("moqc").style.display = "none";
+        // }
+        // document.querySelector("#tatqc>a").onclick = function(){
+        //     document.getElementById("tatqc").style.display = "none";
+        //     document.getElementById("picqc").style.display = "none";
+        //     document.getElementById("moqc").style.display = "block";
+        // }
+        // document.querySelector("#moqc>a").onclick = function(){
+        //     document.getElementById("tatqc").style.display = "block";
+        //     document.getElementById("picqc").style.display = "block";
+        //     document.getElementById("moqc").style.display = "none";
+        // }
+        document.querySelector("#tatqc>a").addEventListener("click",function(){
+            document.getElementById("tatqc").style.display = "none";
+            document.getElementById("picqc").style.display = "none";
+            document.getElementById("moqc").style.display = "block";
+        });
+        document.querySelector("#moqc>a").addEventListener("click",function(){
+            document.getElementById("tatqc").style.display = "block";
+            document.getElementById("picqc").style.display = "block";
+            document.getElementById("moqc").style.display = "none";
+        });
+    </script>
+</body>
+</html>

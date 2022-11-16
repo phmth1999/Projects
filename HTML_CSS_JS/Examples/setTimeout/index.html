@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #dongho{
+            color: red;
+            font-size: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="dongho"></div>
+
+    <script>
+        let so = 11;
+        function diemnguoc(){
+            so--;
+            if(so != 0){
+                document.getElementById("dongho").innerHTML = so;
+                setTimeout("diemnguoc()",1000);
+            }else{
+                document.getElementById("dongho").innerHTML = "het thoi gian";
+                window.location.href = "D:/workspace/Javascript/setTimeout/index.html";
+            }
+        }
+        diemnguoc();
+    </script>
+</body>
+</html>

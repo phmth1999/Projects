@@ -1,0 +1,35 @@
+package HTML;
+
+public class HtmlElement extends HtmlTag {
+	private String tagName;
+	private String startTag;
+	private String endTag;
+	private String tagBody;
+
+	public HtmlElement() {
+		this.tagName = "";
+		this.tagBody = "";
+		this.startTag = "";
+		this.endTag = "";
+	}
+
+	@Override
+	public void setStartTag(String tag) {
+		this.startTag = tag;
+	}
+
+	@Override
+	public void setEndTag(String tag) {
+		this.endTag = tag;
+	}
+
+	@Override
+	public void setTagBody(String tagBody) {
+		this.tagBody = tagBody;
+	}
+
+	@Override
+	public void generateHtml() {
+		System.out.println(startTag + "" + tagBody + "" + endTag);
+	}
+}

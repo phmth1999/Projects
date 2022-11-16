@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product{
+            width: 600px;
+            margin: 0 auto;
+        }
+        .product>.mainpicture{
+            width: 600px;
+            height: 300px;
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
+        .product>.colors{
+            text-align: center;
+        }
+        .product>.colors>img{
+            width: 50px;
+            height: 50px;
+            border: 1px solid #333;
+            margin: 10px;
+        }
+        .product>.colors>img:hover{
+            border: 1px solid red;
+        }
+        .lightbox{
+            display: none;
+        }
+        .lightbox>div{
+            width: 100vw;
+            height: 100vh;
+            background-color: #000;
+            opacity: 0.7;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+        .lightbox>img{
+            width: 70%;
+            height: 500px;
+            position: fixed;
+            left: 15%;
+            z-index: 120;
+            top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="product">
+        <img src="./images/1.jpg" alt="" class="mainpicture">
+        <div class="colors">
+            <img src="./images/1.jpg" alt="">
+            <img src="./images/logo.jpg" alt="">
+            <img src="./images/xam.jpg" alt="">
+            <img src="./images/xanh.jpg" alt="">
+        </div>
+    </div>
+    <div class="lightbox">
+        <div></div>
+        <img src="" alt="">
+    </div>
+
+    <script>
+
+        let colorsList = document.querySelectorAll(".product>.colors>img");
+        for (let i = 0; i < colorsList.length; i++) {
+            colorsList[i].onmouseover = function(){
+                let mainImg = document.querySelector(".product>img");
+                mainImg.src = this.src;
+            }
+
+            // colorsList[i].addEventListener('mouseover',function(){
+            //     let mainImg = document.querySelector(".product>img");
+            //     mainImg.src = this.src;
+            // });    
+            
+            let mainImg = document.querySelector(".product>img");
+            mainImg.onclick = function(){
+                let lightbox = document.querySelector(".lightbox");
+                lightbox.style.display = "block";
+                lightbox.getElementsByTagName("img")[0].src = this.src;
+                lightbox.getElementsByTagName("div")[0].onclick = function(){
+                    lightbox.style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>

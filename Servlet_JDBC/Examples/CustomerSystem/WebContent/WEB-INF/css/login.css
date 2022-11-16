@@ -1,0 +1,69 @@
+.class-body {
+	background: #00ff40;
+	width: 99%;
+	height: 100%;
+}
+/* ------------------------------------------------------------- */
+/* begin header */
+.class-training-h1 {
+	color: red;
+}
+
+.class-login-p {
+	border-top: 1px solid;
+	width: 99%;
+}
+/* end header */
+/* ------------------------------------------------------------- */
+/* begin form login */
+.class-form-login {
+	text-align: center;
+}
+
+.class-login-h1 {
+	color: blue;
+	text-align: center;
+}
+
+.class-label-error {
+	color: red;
+	height: 20px;
+	margin-top: -20px;
+	margin-bottom: 10px;
+}
+
+.class-col-2 {
+	width: 20%;
+	margin-left: 37%;
+}
+
+.class-label {
+	margin-top:4px;
+	margin-bottom:4px;
+	float: left;
+}
+
+.class-input {
+	margin-top:4px;
+	margin-bottom:4px;
+	float: right;
+}
+.class-button{
+	margin-top: 7%;
+}
+.class-button-col-2 {
+	background-color:#c0c0c0;
+	margin-right: 2%;
+	width: 100px;
+	height: 30px;
+}
+/* end form login */
+/* ------------------------------------------------------------- */
+/* begin footer */
+.class-footer {
+	border-top: 1px solid;
+	width: 98%;
+	bottom: 2%;
+	position: absolute;
+}
+/* end footer */

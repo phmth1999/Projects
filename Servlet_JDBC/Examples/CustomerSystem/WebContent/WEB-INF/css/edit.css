@@ -1,0 +1,87 @@
+.class-body {
+	background: #00ff40;
+	width: 99%;
+	height: 100%;
+}
+/* ------------------------------------------------------------- */
+/* begin header */
+.class-training-h1 {
+	color: red;
+}
+
+.class-login-p {
+	border-top: 1px solid;
+	width: 99%;
+}
+.class-fullName{
+	width:49%;
+	float: left;
+	margin-top: -1px;
+}
+.class-logout{
+	width:49%;
+	float:right;
+	text-align: right;
+}
+/* end header */
+/* ------------------------------------------------------------- */
+/* begin form edit */
+.class-form-edit {
+	margin-top: 5%;
+}
+
+.class-label-error {
+	color: red;
+	height: 100px;
+}
+
+.class-col-6 {
+	width: 350px;
+	margin-left: 37%;
+}
+
+.class-col-6 select {
+	margin-bottom: 10px;
+	margin-left: 22px;
+}
+
+.class-col-6 p {
+	width: 200px;
+}
+.class-col-6 textarea {
+	resize: none;
+}
+
+.class-label {
+	margin-bottom: 10px;
+	width: 120px;
+	float: left;
+}
+
+.class-input {
+	margin-bottom: 10px;
+	width: 200px;
+	float: right;
+}
+
+.class-button {
+	margin-left: 44%;
+}
+
+.class-button-col-2 {
+	margin-right: 2%;
+	margin-top: 3%;
+	background-color: #c0c0c0;
+	width: 100px;
+	height: 30px;
+}
+/* end form edit */
+/* ------------------------------------------------------------- */
+/* begin footer */
+.class-footer {
+	border-top: 1px solid;
+	width: 98%;
+	bottom: 2%;
+	position: absolute;
+}
+/* end footer */

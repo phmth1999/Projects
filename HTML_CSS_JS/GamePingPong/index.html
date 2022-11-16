@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .mybox{
+            text-align: center;
+        }
+        .box{
+            width: 500px;
+            height: 200px;
+            background-color: lightblue;
+            border: 2px solid blue;
+            margin: 20px auto;
+            position: relative;
+        }
+        .ball{
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            background-color: yellow;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="mybox">
+        <input class="play" type="button" value="Play">
+        <input class="stop" type="button" value="Stop">
+    </div>
+    <div class="box">
+        <div class="ball"></div>
+    </div>
+
+    <script>
+        let btop = 0;
+        let bleft = 0;
+        let x = 5;
+        let y = 5;
+        let ball = document.getElementsByClassName("ball")[0];
+        let box = document.getElementsByClassName("box")[0];
+        function play(){
+            if (btop+ball.offsetHeight >= box.offsetHeight || btop<0) {
+                y = -y;
+            }
+            if (bleft+ball.offsetWidth >= box.offsetWidth || bleft<0) {
+                x = -x;
+            }
+            btop += y;
+            bleft += x;
+            ball.style.top = btop + "px";
+            ball.style.left = bleft + "px";
+            timer = setTimeout("play()",100);
+        }
+        function stop(){
+            clearTimeout(timer);
+        }
+
+        document.querySelector(".mybox>.play").onclick = function(){
+            play();
+        };
+        document.querySelector(".mybox>.stop").onclick = function(){
+            stop();
+        };
+    </script>
+</body>
+</html>

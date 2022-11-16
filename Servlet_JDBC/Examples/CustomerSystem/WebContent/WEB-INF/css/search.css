@@ -1,0 +1,196 @@
+.class-body {
+	background: #00ff40;
+	width: 99%;
+	height: 100%;
+}
+/* ------------------------------------------------------------- */
+/* begin header */
+.class-training-h1 {
+	color: red;
+}
+
+.class-login-p {
+	border-top: 1px solid;
+	width: 99%;
+}
+
+.class-fullName {
+	width: 49%;
+	float: left;
+	margin-top: -1px;
+}
+
+.class-logout {
+	width: 49%;
+	float: right;
+	text-align: right;
+}
+
+.class-blue {
+	background-color: blue;
+}
+/* end header */
+/* ------------------------------------------------------------- */
+/* begin form search */
+.class-form-search {
+	margin-top: 50px;
+	border: 1px;
+	padding: 30px;
+	background-color: yellow;
+}
+
+.class-form-search input {
+	width: 100px;
+	height: 20px;
+}
+
+.class-form-search select {
+	width: 70px;
+	height: 25px;
+}
+
+.class-name {
+	float: left;
+	width: 25%;
+	margin-top: -13px;
+}
+
+.class-sex {
+	float: left;
+	width: 25%;
+	text-align: center;
+	margin-top: -13px;
+}
+
+.class-birthday {
+	float: left;
+	width: 25%;
+	text-align: center;
+	margin-top: -13px;
+}
+
+.class-btnSearch {
+	float: left;
+	width: 25%;
+	text-align: right;
+	margin-top: -13px;
+}
+
+.class-btnSearch button {
+	background-color: #c0c0c0;
+	width: 100px;
+	height: 25px;
+}
+/* end form search */
+/* ------------------------------------------------------------- */
+/* begin form pagination */
+.class-form-pagination {
+	margin-top: 20px;
+	margin-bottom: 60px;
+}
+
+.class-form-pagination button {
+	background-color: #c0c0c0;
+	width: 50px;
+	height: 25px;
+}
+
+.class-Previous {
+	float: left;
+	width: 49%;
+}
+
+.class-next {
+	float: right;
+	width: 49%;
+	text-align: right;
+}
+/* end form pagination */
+/* ------------------------------------------------------------- */
+/* begin form table */
+.class-form-table {
+	
+}
+
+.class-table {
+	border: 1px solid;
+	margin-top: 50px;
+	border-collapse: collapse;
+}
+
+.class-table-titile {
+	background-color: #c0c0c0;
+}
+
+.class-table-item {
+	background-color: white;
+}
+.class-table-checkAll{
+	width: 50px;
+}
+
+.class-table-customerId {
+	width: 120px;
+	max-width: 120px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.class-table-customerName {
+	width: 290px;
+	max-width: 290px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.class-table-sex {
+	width: 220px;
+	max-width: 220px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.class-table-birthday {
+	width: 180px;
+	max-width: 180px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.class-table-email{
+	width: 180px;
+	max-width: 180px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.class-table-address {
+	max-width: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.class-button {
+	margin-top: 20px;
+}
+
+.class-button-col-2 {
+	margin-right: 2%;
+	background-color: #c0c0c0;
+	width: 100px;
+	height: 30px;
+}
+/* end form table */
+/* ------------------------------------------------------------- */
+/* begin footer */
+.class-footer {
+	border-top: 1px solid;
+	width: 98%;
+	bottom: 2%;
+	position: absolute;
+}
+/* end footer */

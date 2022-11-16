@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .sum{
+            text-align: center;
+        }
+        #ketQua{
+            background: teal;
+            color: white;
+            padding: 30px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="sum">
+        <input id="soa" type="text" value="">
+        <input id="sob" type="text" value="">
+        <input id="cong" type="button" value="Phép cộng">
+    </div>
+    <div id="ketQua"></div>
+
+    <script>
+        let a = document.getElementById("soa");
+        let b = document.getElementById("sob");
+        document.getElementById("cong").onclick = function(){
+            let tong = parseInt(a.value)+parseInt(b.value);
+            document.getElementById("ketQua").innerHTML =a.value +"+"+b.value+"="+tong;          
+        }
+    </script>
+</body>
+</html>

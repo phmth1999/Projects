@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .btn>input{
+          font-size: 20px;
+          width: 50px;
+          height: 50px;
+          background: none;
+          outline: none;
+          border: 1px solid #ececec;
+        }
+        .btn>input:hover{
+            background-color: gray;
+            opacity: 0.7;
+        }
+        .container>input{
+            width: 50px;
+            text-align: center;
+            border: 1px solid #ececec;
+            outline: none;
+        }
+        .container>input:hover{
+            border-color: green;
+        }
+        .container>input:focus{
+            border-color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="btn">
+            <input class="btnTru" type="button" value="-">
+        </div>
+        <input id="amount" type="text" value="1">
+        <div class="btn">
+            <input class="btnCong" type="button" value="+">
+        </div>
+    </div>
+
+    <script>
+        let amountElement = document.getElementById("amount");
+        let amount = amountElement.value;
+        function tru(){
+            if(amount>1){             
+                amount--;
+                amountElement.value = amount;
+            }   
+        }
+        function cong(){
+            amount++;
+            amountElement.value = amount;
+        }
+        document.querySelector(".btnTru").onclick = function(){
+            tru();
+        }
+        document.querySelector(".btnCong").onclick = function(){
+            cong();
+        }
+        amountElement.addEventListener("input",function(){
+            amount = amountElement.value;
+            amount = parseInt(amount);
+            amount = (isNaN(amount)||amount===0)?1:amount;
+            amountElement.value = amount;
+        });
+        // amountElement.onkeyup = function(){
+        //     amount = amountElement.value;
+        //     amount = parseInt(amount);
+        //     amount = (isNaN(amount)||amount===0)?1:amount;
+        //     amountElement.value = amount;
+        // }
+    </script>
+</body>
+</html>

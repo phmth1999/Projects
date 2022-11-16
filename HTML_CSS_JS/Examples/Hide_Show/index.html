@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .btn{
+            text-align: center;
+        }
+        .btn input{
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+        }
+        .btn input:hover{
+            border: 1px solid blue;
+            color: blue;
+        }
+        #hide{     
+            text-align: center;      
+            margin: 10px;
+            padding: 25px;
+            background: teal;
+            color: white;
+            display: block;
+        }     
+    </style>
+</head>
+<body>
+    <div class="btn">
+        <input class="show" type="button" value="Show" onclick="show()">
+        <input class="hide" type="button" value="Hide" onclick="hide()">
+    </div>
+    <div id="hide">
+        Nội dung sẽ ẩn hoặc hiện ra khi Click nút Button.
+    </div>
+
+    <script>
+        function show(){
+            document.getElementById("hide").style.display = "block";
+        }
+        function hide(){
+            document.getElementById("hide").style.display = "none";
+        }
+
+        // let show = document.querySelector(".show");
+        // let hide = document.querySelector(".hide");
+
+        // show.onclick = function(){
+        //     document.getElementById("hide").style.display = "block";
+        // }
+        // hide.onclick = function(){
+        //     document.getElementById("hide").style.display = "none";
+        // }
+
+        // show.addEventListener("click",function(){
+        //     document.getElementById("hide").style.display = "block";
+        // });
+        // hide.addEventListener("click",function(){
+        //     document.getElementById("hide").style.display = "none";
+        // });
+    </script>
+</body>
+</html>
